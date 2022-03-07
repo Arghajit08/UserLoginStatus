@@ -10,7 +10,7 @@ class MainUser(AbstractUser):
     username = models.CharField(max_length=100)
     email=models.EmailField(unique=True)
     password = models.CharField(max_length=100)
-    phoneno=models.BigIntegerField(unique=True)
+    phoneno=models.BigIntegerField(unique=True,default=9087543453)
     user_loggedin=models.BooleanField(default=False)
     user_loggedout=models.BooleanField(default=False)
     user_locked=models.BooleanField(default=False)
